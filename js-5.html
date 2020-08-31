@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Exemplo</title>
+</head>
+<body>
+    <input type="text" id="input" oninput="updateText()"> 
+    <br>
+    <span id="result"> Esperando você escrever... </span>
+
+    <script>
+        function updateText(){
+            if(input.value === ""){
+                result.innerText = "Esperando você escrever...";
+            }else{
+                result.innerText = input.value;
+            }
+        }
+    </script>
+</body>
+</html>
+

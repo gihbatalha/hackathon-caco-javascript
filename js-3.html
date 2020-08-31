@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Exemplo</title>
+</head>
+<body>
+    <button id="btn1"> Btn 1 </button>
+    <button id="btn2" class="button"> Btn 2 </button>
+    <button id="btn3" class="button"> Btn 3 </button>
+
+    <script>
+        const el1 = document.querySelector("#btn1");
+
+        el1.addEventListener("click", function(e){
+            console.log("Click btn 1");
+            if(el1.style.color === "white"){
+                el1.style.color = "black";
+                el1.style.backgroundColor = "white";
+            }else{
+                el1.style.color = "white";
+                el1.style.backgroundColor = "black";
+            }
+        });
+    </script>
+</body>
+</html>
+

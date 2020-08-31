@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Exemplo</title>
+</head>
+<body>
+    <input type="text" id="input"> 
+    <br> 
+    <span id="result"> </span>
+
+    <script>
+        input = document.getElementById("input");
+        result = document.getElementById("result");
+
+        input.oninput = function(){
+            result.innerText = input.value;
+        }
+    </script>
+</body>
+</html>
+
+
